@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thecvit2328/node-request-with-aws-lambda/issues"
   },
-  "homepage": "https://github.com/thecvit2328/node-request-with-aws-lambda#readme"
+  "homepage": "https://github.com/thecvit2328/node-request-with-aws-lambda#readme",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
 }
