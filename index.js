@@ -1,6 +1,7 @@
 'use strict'
 const request = require('request')
 
+//https://hackernoon.com/create-a-serverless-rest-api-with-node-js-aws-lambda-dynamodb-api-gateway-f08e7111fd16
 exports.handler = async event => {
   // TODO implement
   const email = event.email && event.email
@@ -8,18 +9,17 @@ exports.handler = async event => {
   if (email && password)
     request.post(
       {
-        url: 'http://dev2.tripapi.udrinkbackend.com/api/customer/history',
+        url: 'http://URL_API/',
         form: {
           usermane: email,
           password: password
         }
       },
       function(err, httpResponse, body) {
-        if (!err) {
+        if (!err && httpResponse.statusCode == 200) {
+          var dataResp = JSON.parse(body)
           return {
-            data: {
-              httpResponse
-            },
+            data: dataResp,
             message: 'Login successfully.',
             result: 1
           }
