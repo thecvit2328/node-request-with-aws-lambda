@@ -1,0 +1,19 @@
+{
+  "name": "request-with-aws-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecvit2328/node-request-with-aws-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecvit2328/node-request-with-aws-lambda/issues"
+  },
+  "homepage": "https://github.com/thecvit2328/node-request-with-aws-lambda#readme"
+}
